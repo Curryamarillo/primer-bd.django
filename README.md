@@ -1,0 +1,2 @@
+# primer-bd.django
+practica
