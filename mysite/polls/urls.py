@@ -1,7 +1,9 @@
-from django.urls import path
+def detail(request, question_id):
+    return HttpResponse("You're looking at question %s." % question_id)
 
-from . import views
+def results(request, question_id):
+    response = "You're looking at the results of question %s."
+    return HttpResponse(response % question_id)
 
-urlpatterns = [
-    path('', views.index, name='index'),
-]
+def vote(request, question_id):
+    return HttpResponse("You're voting on question %s." % question_id)
